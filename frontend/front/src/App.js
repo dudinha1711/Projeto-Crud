@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import Formulario from './Formulario';
 import Tabela from './Tabela';
 
 function App() {
+
+  const[btnCadastrar] =useState(true);
   return (
-    <div className="App">
-      <Formulario />
+    <div>
+      <Formulario botao={btnCadastrar}/>
       <Tabela />
     </div>
   );

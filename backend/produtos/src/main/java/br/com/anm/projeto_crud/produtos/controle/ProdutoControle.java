@@ -22,6 +22,7 @@ import br.com.anm.projeto_crud.produtos.servico.ProdutoServico;
      @Autowired
      private ProdutoServico ps;
  
+     @PostMapping
      public ResponseEntity<?> cadastrar(@RequestBody ProdutoModelo pm){
          return ps.cadastrarAlterar(pm, "cadastrar");
      }
